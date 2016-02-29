@@ -1,0 +1,14 @@
+.brick {
+  display:inline-block;
+  width:50px;
+  height:25px;
+  background-color:#A39480;
+ padding:0;
+  margin:0;
+}
+
+.line {
+  font-size:0;
+  padding:0;
+  margin:0;
+  }

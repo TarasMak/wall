@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+.brick {
+  display:inline-block;
+  width:50px;
+  height:25px;
+  background-color:#A39480;
+ padding:0;
+  margin:0;
+}
+
+.line {
+  font-size:0;
+  padding:0;
+  margin:0;
+  }
+</style>
+</head>
+<body>
+  <div class="line"><span class="brick"></span>
+  <span class="brick"></span>
+  <span class="brick"></span>
+  <span class="brick"></span></div>
+  <div class="line"><span class="brick"></span>
+  <span class="brick"></span>
+  <span class="brick"></span>
+  <span class="brick"></span></div>
+  <div class="line"><span class="brick"></span>
+  <span class="brick"></span>
+  <span class="brick"></span>
+  <span class="brick"></span></div>
+  <div class="line"><span class="brick"></span>
+  <span class="brick"></span>
+  <span class="brick"></span>
+  <span class="brick"></span></div>
+  <div class="line"><span class="brick"></span>
+  <span class="brick"></span>
+  <span class="brick"></span>
+  <span class="brick"></span></div>
+  
+
+<script id="jsbin-javascript">
+//noprotect
+
+[].forEach.call(document.getElementsByClassName("brick"), function(el){
+  el.addEventListener('click', dissaper, false);
+   
+})
+
+function dissaper (){
+ 
+  this.style.background= "#808991";
+  this.style.color="#FFF";
+  this.style.width= "0";
+  this.style.height= "0";
+  this.style.border="none";
+  this.style.transition="2s linear";
+ //pausecomp(2000);
+ // this.style.opacity="0";
+
+}
+
+function pausecomp(millis)
+ {
+  var date = new Date();
+  var curDate = null;
+  do { curDate = new Date(); }
+  while(curDate-date < millis);
+}
+</script>
+
+
+<script id="jsbin-source-css" type="text/css">.brick {
+  display:inline-block;
+  width:50px;
+  height:25px;
+  background-color:#A39480;
+ padding:0;
+  margin:0;
+}
+
+.line {
+  font-size:0;
+  padding:0;
+  margin:0;
+  }
+</script>
+
+<script id="jsbin-source-javascript" type="text/javascript">//noprotect
+
+[].forEach.call(document.getElementsByClassName("brick"), function(el){
+  el.addEventListener('click', dissaper, false);
+   
+})
+
+function dissaper (){
+ 
+  this.style.background= "#808991";
+  this.style.color="#FFF";
+  this.style.width= "0";
+  this.style.height= "0";
+  this.style.border="none";
+  this.style.transition="2s linear";
+ //pausecomp(2000);
+ // this.style.opacity="0";
+
+}
+
+function pausecomp(millis)
+ {
+  var date = new Date();
+  var curDate = null;
+  do { curDate = new Date(); }
+  while(curDate-date < millis);
+}</script></body>
+</html>
